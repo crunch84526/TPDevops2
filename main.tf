@@ -3,9 +3,10 @@ provider "azurerm" {
   features {}
 }
 
-# Référencement du groupe de ressources existant
-data "azurerm_resource_group" "existing" {
-  name = "azurerm_resource_group"
+# Création du groupe de ressources
+resource "azurerm_resource_group" "example" {
+  name     = "example-resources"
+  location = "East US"
 }
 
 
