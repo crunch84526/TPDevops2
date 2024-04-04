@@ -1,6 +1,6 @@
 # Référencement du groupe de ressources existant
 data "azurerm_resource_group" "existing" {
-  name = azurerm_resource_group.example.name
+  name = azurerm_resource_group
 }
 
 # Création du compte de stockage
